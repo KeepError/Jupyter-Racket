@@ -25,3 +25,8 @@ services:
     volumes:
       - "${PWD}:/home/jovyan/work"
 ```
+
+### To pull latest version
+```sh
+docker image pull keeperror/jupyter-racket
+```
