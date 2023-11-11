@@ -14,6 +14,5 @@ RUN raco setup
 USER jovyan
 
 RUN echo "A" | raco pkg install iracket
+RUN echo "A" | raco pkg install faster-minikanren
 RUN raco iracket install
-
-CMD ["start-notebook.sh",  "--NotebookApp.token=''",  "--NotebookApp.password=''"]

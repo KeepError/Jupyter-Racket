@@ -11,7 +11,7 @@ Find Docker image on Docker Hub: https://hub.docker.com/r/keeperror/jupyter-rack
 ### With Docker run command
 
 ```sh
-docker run -p 8888:8888 -v "${PWD}":/home/jovyan/work keeperror/jupyter-racket
+docker run --rm -p 8888:8888 -v $PWD:/home/jovyan/pwd --name jupyter-racket keeperror/jupyter-racket jupyter lab --ServerApp.token=''
 ```
 
 ### With Docker Compose
